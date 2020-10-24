@@ -18,7 +18,7 @@ namespace GCNotificationHub{
             var name = configuration["hub"];
             var cs = configuration["hub-cs"];
             NotificationHubClient hub = NotificationHubClient.CreateClientFromConnectionString(cs, name);
-            string toast = @"<toast><visual><binding template=""ToastText01""><text id=""1"">Hello from a .NET App!</text></binding></visual></toast>";
+            string toast = @"<toast><visual><binding template=""ToastText01""><text id=""1"">AZ204</text></binding></visual></toast>";
             await hub.SendWindowsNativeNotificationAsync(toast);            
         }
     }
